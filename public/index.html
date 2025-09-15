@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreDNA Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="bot-avatar">
+                            <div class="robot-antenna"></div>
+                            <div class="robot-face"></div>
+                        </div>
+                    </div>
+                    <h1>CoreDNA Assistant</h1>
+                </div>
+                <p class="subtitle">Ask me anything about CoreDNA's platform, pricing, and features</p>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <div class="bot-avatar">
+                        <div class="robot-antenna"></div>
+                        <div class="robot-face"></div>
+                    </div>
+                    <div class="message-text">
+                        <p>Hello! I'm the CoreDNA assistant. I can help you learn about CoreDNA's platform, pricing, features, and more. What would you like to know?</p>
+                        <div class="suggestions">
+                            <button class="suggestion-btn" data-suggestion="What is CoreDNA?">What is CoreDNA?</button>
+                            <button class="suggestion-btn" data-suggestion="Tell me about pricing">Tell me about pricing</button>
+                            <button class="suggestion-btn" data-suggestion="What features does CoreDNA offer?">What features does CoreDNA offer?</button>
+                            <button class="suggestion-btn" data-suggestion="How does CoreDNA eCommerce work?">How does CoreDNA eCommerce work?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="chat-input">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Ask me about CoreDNA..." 
+                    autocomplete="off"
+                >
+                <button id="sendButton" type="button">
+                    <span class="send-icon">📤</span>
+                </button>
+            </div>
+            <div class="input-help">
+                Try asking: "What are the pricing plans?" or "Tell me about eCommerce features"
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="loading-dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span>CoreDNA Assistant is thinking...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

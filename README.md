@@ -124,6 +124,58 @@ coredna-chatbot/
 - **Memory Usage**: <100MB during scraping
 - **Reliability**: 99.9% success rate with error handling
 
+## 🚀 Running the Chatbot
+
+### Start the Server
+```bash
+npm start
+# or
+npm run dev
+```
+
+The chatbot will be available at:
+- **Web Interface**: http://localhost:3000
+- **API Endpoint**: http://localhost:3000/api/chat
+
+### API Usage
+```javascript
+// POST to /api/chat
+{
+  "message": "What are CoreDNA's pricing plans?",
+  "sessionId": "optional-session-id"
+}
+
+// Response
+{
+  "message": "Here's information about CoreDNA's pricing:",
+  "type": "pricing",
+  "content": { ... },
+  "timestamp": "2025-09-15T07:53:01.239Z"
+}
+```
+
+### Available Endpoints
+- `POST /api/chat` - Send messages to chatbot
+- `GET /api/topics` - Get available topics
+- `GET /api/knowledge/:slug` - Get specific page content
+- `GET /api/health` - Health check
+
+## 🧠 Chatbot Capabilities
+
+### Question Types Supported
+- **Pricing**: "What does CoreDNA cost?", "Tell me about pricing"
+- **Features**: "What features does CoreDNA offer?"
+- **eCommerce**: "How does CoreDNA eCommerce work?"
+- **General**: "What is CoreDNA?", "How does it compare?"
+- **Help**: "What can you help with?"
+
+### Response Types
+- **Pricing**: Formatted pricing plans with highlights
+- **Features**: Key feature lists and benefits
+- **Search**: Relevant content from knowledge base
+- **Greeting**: Welcome message with suggestions
+- **Help**: Available topics and examples
+
 ---
 
 Built with ❤️ for CoreDNA chatbot applications
