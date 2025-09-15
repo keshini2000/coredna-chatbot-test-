@@ -36,6 +36,8 @@ cd coredna-chatbot-test-
 npm install
 ```
 
+> **👉 Try the live demo**: https://coredna-chatbot-test-8zxbsrskf-keshs-projects-1c7038fb.vercel.app/
+
 ### Usage
 ```bash
 # Start the chatbot server
@@ -47,8 +49,9 @@ npm run scrape
 
 ## 🌐 Access the Chatbot
 
-- **Web Interface**: http://localhost:3000
-- **API Endpoint**: http://localhost:3000/api/chat
+- **🌍 Live Demo**: https://coredna-chatbot-test-8zxbsrskf-keshs-projects-1c7038fb.vercel.app/
+- **🏠 Local Development**: http://localhost:3000
+- **📡 API Endpoint**: `/api/chat`
 
 ## 💬 What the Chatbot Can Answer
 
